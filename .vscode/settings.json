@@ -1,0 +1,6 @@
+{
+    "snyk.advanced.autoSelectOrganization": true,
+    "terminal.integrated.env.osx": {
+        "CLAUDE_CONFIG_DIR": "/Users/benrudolph/.claude-personal"
+    }
+}
