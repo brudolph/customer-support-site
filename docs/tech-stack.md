@@ -12,8 +12,8 @@ Utility-first CSS for styling the UI.
 REST API server handling business logic, email webhooks, AI calls, and database access. Runs as a separate process from the frontend.
 
 ## Database
-**Prisma + SQLite (dev) / PostgreSQL (prod)**
-Prisma provides type-safe queries and easy migrations. SQLite for local dev (zero setup); swap to PostgreSQL for deployment.
+**Prisma + PostgreSQL**
+Prisma provides type-safe queries and easy migrations. PostgreSQL used in both local dev and production.
 
 ## AI
 **Claude API (Anthropic SDK)**

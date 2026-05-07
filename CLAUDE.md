@@ -56,7 +56,7 @@ npm run preview      # preview production build locally
 
 Entry point is `src/index.ts` — sets up Express with CORS (credentials), JSON body parsing, and cookie-parser, then starts the server. All routes will be registered here as the project grows.
 
-Database access goes through Prisma Client. Schema lives in `prisma/schema.prisma`; config (seed script, migration path) in `prisma.config.ts`. The dev database is SQLite (`prisma/dev.db`); production uses PostgreSQL (swap `DATABASE_URL` and provider).
+Database access goes through Prisma Client. Schema lives in `prisma/schema.prisma`; config (seed script, migration path) in `prisma.config.ts`. PostgreSQL is used in both local dev and production — connection string set via `DATABASE_URL` in `backend/.env`.
 
 As routes are added, follow this pattern:
 - `src/routes/` — Express Router files, one per resource
